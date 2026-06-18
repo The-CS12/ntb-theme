@@ -1,16 +1,11 @@
-<div style="display:flex; gap: 10px; align-items:center; justify-content:center">
+
 ![Hugo](https://img.shields.io/badge/Hugo-Extended-blue)
-
 ![License|122](https://img.shields.io/github/license/farhantbyte/ntb-theme)
-
 ![Stars](https://img.shields.io/github/stars/farhantbyte/ntb-theme)
-
 ![Last Commit](https://img.shields.io/github/last-commit/farhantbyte/ntb-theme)
-
 ![Repo Size](https://img.shields.io/github/repo-size/farhantbyte/ntb-theme)
-</div>
 
-`NTB-Theme` یک تمپلیت ساده نوشته شده با hugo هست تا آموزش هر مبحثی رو به شکل تِرِد بیس راحت کنند.
+در حقیقت `NTB-Theme` یک تمپلیت ساده نوشته شده با hugo هست تا آموزش هر مبحثی رو به شکل تِرِد بیس راحت کنند.
 
 ---
 ## آموزش به سبک تٍرِد 
@@ -154,7 +149,7 @@ comments: true
 hugo serve -D
 ```
 
-14. اگر اوکی بود پراسس رو با kill کنید و دستور
+14. اگر اوکی بود پراسس رو kill کنید و دستور
 ‍‍
 ```
 hugo --gc --minify
