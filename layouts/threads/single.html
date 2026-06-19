@@ -96,7 +96,7 @@
                         <b class="disp-B"> شماره تِرِد : </b>
                         <span class="disp-B">شماره {{.Params.order}} از {{ len .CurrentSection.Pages }}</span>
                     </div>
-
+                    {{if .Params.license}}
                     <div class="svg-cont por zin5 clickable"
                     data-tooltip-text = "لایسنس"
                     data-modal
@@ -107,8 +107,10 @@
                     <svg viewBox="0 0 512 512">
                         <use href="#_LICENSE_ICON" xlink:href="#_LICENSE_ICON"></use>
                     </svg>
+                    
                 </div>
-                </div>
+                    {{end}}
+            </div>
                 </article>
 
                    <div class="ph fl aliI-CE jusCo-SP">
