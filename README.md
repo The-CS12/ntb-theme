@@ -1,7 +1,7 @@
 
 ![Hugo](https://img.shields.io/badge/Hugo-Extended-blue)
 ![License|122](https://img.shields.io/github/license/farhantbyte/ntb-theme)
-![Stars](https://img.shields.io/github/stars/farhantbyte/ntb-theme)
+![Stars|76](https://img.shields.io/github/stars/farhantbyte/ntb-theme)
 ![Last Commit](https://img.shields.io/github/last-commit/farhantbyte/ntb-theme)
 ![Repo Size](https://img.shields.io/github/repo-size/farhantbyte/ntb-theme)
 
