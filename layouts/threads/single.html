@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
     {{ partial "head.html" . }}
+    {{ if .Params.mathEnable }}
+          {{ partial "math.html" . }}
+    {{ end }}
     <body class="mrg0">
         <section class="wrp">
         {{ partial "header.html" . }}

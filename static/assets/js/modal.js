@@ -31,6 +31,8 @@ function stopModalMedia(){
     m.pause()
     m.currentTime = 0   
   })
+
+  modalMedia.innerHTML = ""; 
 }
 
 function resetCopyButton(){
@@ -59,6 +61,17 @@ document.querySelectorAll("[data-modal]").forEach(el => {
     }
     if(type === "audio"){
       modalMedia.innerHTML = `<audio controls src="${src}"></audio>`
+    }
+    if(type === "iframe")
+    {
+      modalMedia.innerHTML = `
+        <iframe 
+          src="${src}" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen 
+          style="width: 100%; aspect-ratio: 16/9; border-radius: 8px;">
+        </iframe>`
     }
     if(type === "share"){
       copyValue = src

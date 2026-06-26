@@ -20,6 +20,7 @@ license: ""
 image: ""
 # اگر میخوای این مطلب کامنت داشته باشه...
 comments: true
+mathEnable: false
 ---
 
 <!-- این پست یک پست سمپل هست برای این که ادامه بدی میتونی این بخش ها رو استفاده یا پاک کنی -->
@@ -30,11 +31,56 @@ comments: true
 <!-- اگر میخواستی به صورت پیشفرض باز باشه true بزارش -->
 <!-- title به صورت پیشفرض همون یکم بیشتر بدونید هست میتونی پاکش کنی... -->
 
-{{< readmore title="یکم بیشتر بدونید" open="false" >}}
+<!-- 
+    + type = {
+        - info
+        - warning
+        - exercise
+        - error
+        - readMore
+        - project
+        - bestPractice
+    }
+
+    میتونی جای تایپ یکی از اینا رو بزاری ...
+    دیفالتش readMore هست.
+ -->
+
+{{< readmore type="" title="یکم بیشتر بدونید" open="false" >}}
+متن کامل
+{{< /readmore >}}
+
+{{< readmore type="info" title="توضیحات" open="true" >}}
+متن کامل
+{{< /readmore >}}
+
+
+{{< readmore type="warning" title="هشدار" open="false" >}}
+متن کامل
+{{< /readmore >}}
+
+
+{{< readmore type="error" title="خطا" open="false" >}}
+متن کامل
+{{< /readmore >}}
+
+
+{{< readmore type="project" title="پروژه" open="false" >}}
+متن کامل
+{{< /readmore >}}
+
+{{< readmore type="bestPractice" title="بهتر است این کار را کنید" open="false" >}}
+متن کامل
+{{< /readmore >}}
+
+
+{{< readmore type="excercise" title="تمرین" open="false" >}}
 متن کامل
 {{< /readmore >}}
 
 <!-- کد ریوزیبل مودال مدیا وسط پست -->
+
+<!-- این تایپ میتونه  -->
 
 {{< 
     mediamodal type="تایپ رو بنویس"

@@ -1,4 +1,12 @@
-<details {{ if eq (.Get "open") "true" }}open{{ end }}>
-  <summary>{{ .Get "title" | default "بیشتر بخوانید" }}</summary>
-  {{ .Inner | markdownify }}
+{{ $rawType := .Get "type" | default "readMore" }}
+{{ $allowed := slice "info" "warning" "error" "readMore" "bestPractice" "project" "excersise" }}
+{{ $type := cond (in $allowed $rawType) $rawType "readMore" }}
+{{ $title := .Get "title" | default "یکم بیشتر بدونید" }}
+{{ $open := eq (.Get "open") "true" }}
+
+<details class="box {{ $type }}" {{ if $open }}open{{ end }}>
+  <summary>{{ $title }}</summary>
+  <div class="box-content">
+    {{ .Inner | markdownify }}
+  </div>
 </details>
