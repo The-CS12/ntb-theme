@@ -119,9 +119,9 @@ congrats_image = "/assets/static-pic/congrat.gif"
 
 [params.github]
 # آدرس ریپو گیت هابتون رو این شکلی بزارید :  username/repo-name
-repo = "farhantbyte/ntb-theme"
+repo = "The-CS12/ntb-theme"
 # برنچ اصلی رو هم بزارید...
-branch = "main"
+branch = "content"
 
 # ===========================================
 # تنظیمات سیستم نظرات
